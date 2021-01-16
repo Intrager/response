@@ -1,0 +1,24 @@
+*{margin:0; padding:0;}
+
+            #wrap{
+                width:160px;
+                height:100px;
+                margin:0 auto;
+                background: #e65d5d;
+                border:4px solid #000;
+            }
+            @media all and (min-width:320px) {
+                body {
+                    background:#e65d5d;
+                }
+            }
+            @media all and (min-width:768px) {
+                body {
+                    background:#2dcc70;
+                }
+            }
+            @media all and (min-width:960px) {
+                body {
+                    background:#6fc0d1;
+                }
+            }
