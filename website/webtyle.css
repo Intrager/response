@@ -1,0 +1,28 @@
+/* 모바일용 CSS */
+/* 기본 CSS */
+#wrap { 
+    display:flex;   /* 모바일용 CSS에서 태그가 어떻게 보일지를 설정하는 display 속성의 값을 flex로 설정하여 모든 환경에서 플렉서블 박스로 작동하게 합니다.*/
+    flex-flow:column nowrap;    /* 모바일 환경에서 메인 페이지 구조를 살펴보면 박스들이 세로로 한 줄씩 배치 되는 걸 알 수 있습니다. 박스의 배치 방향과 여러 줄 배치를 한 번에 설정하기 위한 flex-flow 속성의 값을 column nowrap으로 설정하여 박스가 세로로 한 줄씩 배치되게 합니다. */
+    width:80%;
+    margin:0 auto;
+    max-width:1200px;
+}
+#wrap section {
+    box-sizing:border-box;  /* 박스 크기를 결정하는 방법을 변경하는 box-sizing 속성의 값을 선값과 패딩값을 너빗값에 포함하는 값인 border-box로 변경합니다. */
+}
+/* 태블릿용 CSS */
+@media all and (min-width:768px) {
+/* 기본 CSS */
+#wrap {
+    flex-flow:row wrap;
+} /* 태블릿 환경과 PC 환경에서 메인 페이지의 구조를 보면 박스들이 가로로 여러 줄 배치되어 있습니다. 박스의 배치 방향과 여러 줄 배치를 한 번에 설정하기 위한 flex-flow 속성의 값을 박스를 가로로 배치하면서 여러 줄로 배치하는 값인 row wrap으로 설정합니다.*/
+}
+
+/* PC용 CSS */
+@media all and (min-width:960px) {
+/* 기본 CSS */
+#wrap {
+    position:relative;
+    width:90%;
+}
+}
