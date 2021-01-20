@@ -12,7 +12,7 @@ footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 }       /* 모든 태그를 기본값으로 초기화합니다. */
 body {
     font-family:NanumGothic,나눔고딕,'Nanum Gothic','맑은 고딕',HelveticaNeue,DroidSans,Sans-serif,Helvetica;
-    background:url(images/s_images/body_bg.png);
+    background:url(/images/s_images/body_bg.png);
     line-height:1;
 }   /* <body> 태그에 폰트 속성과 배경 속성 그리고 글자 행간 속성을 설정합니다. */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
